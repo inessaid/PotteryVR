@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1755050254786218965
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1755050254786218963}
+  - component: {fileID: 1755050254786218964}
+  m_Layer: 0
+  m_Name: BatteryStatusIndicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1755050254786218963
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755050254786218965}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6831121, y: 1.323572, z: -3.273704}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1755050254786218964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755050254786218965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb559b2665a164ccd80708035425e5ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  batteryIconEmpty: {fileID: 2800000, guid: a2394b8b2714f9942a14ad115fec48b9, type: 3}
+  batteryIconFillWhite: {fileID: 2800000, guid: 714920c3c40fa6444a841b5c435ad880,
+    type: 3}
+  batteryIconFillYellow: {fileID: 2800000, guid: fd79ae1584bc0104797a2552e3a815ad,
+    type: 3}
+  batteryIconFillRed: {fileID: 2800000, guid: 27c77c34d3335264c925c0bd42025819, type: 3}
+  batteryIconDisabled: {fileID: 2800000, guid: 2b6bc8eb037b75a46ab6ebf4429164fa, type: 3}
+  BTIcon: {fileID: 2800000, guid: d796c7955b8f9094d9ba0ea407f3e9c6, type: 3}
+  USBIcon: {fileID: 2800000, guid: e3ae1c8a7a8d7ac468ef79a631c4fccc, type: 3}
+  DongleIcon: {fileID: 2800000, guid: fb664c05defe01c41a0cc3644664c4ac, type: 3}

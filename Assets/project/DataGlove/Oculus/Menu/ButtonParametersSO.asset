@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8158d997ca7440a83baf09954993c1, type: 3}
+  m_Name: ButtonParametersSO
+  m_EditorClassIdentifier: 
+  buttonDebounceTime: 0.75
+  standbyColor: {r: 1, g: 1, b: 1, a: 0.65882355}
+  highlightColor: {r: 1, g: 1, b: 1, a: 1}
+  switchStandbyColor: {r: 1, g: 1, b: 1, a: 0.3529412}
+  hoverTweenTime: 0.3
+  hoverScaleAmt: 1.2
+  hoverMoveAmt: -0.6
+  pushTweenTime: 0.2
+  pushScaleAmt: 0.85
+  pushMoveAmt: 0.5
