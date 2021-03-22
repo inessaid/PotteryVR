@@ -6,7 +6,11 @@ public class deform : MonoBehaviour
 {
     //public Camera VRCamera;
     public GameObject ball;
+    public GameObject wrist;
     public float min;
+
+    bool isHaptic;
+
 
     // Start is called before the first frame update
     void Start()
@@ -18,22 +22,42 @@ public class deform : MonoBehaviour
     void Update()
     {
         float distance = Vector3.Distance(ball.transform.position,transform.position);
-        Debug.Log("Distance: " + distance);
+        // Debug.Log("Distance: " + distance);
+
+        HapticController haptics = wrist.gameObject.GetComponentInParent<HapticController>();
 
         if (distance < min)
         {
-            Debug.Log("Should Deform");
 
             Ray ray = new Ray(transform.position, transform.forward);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                BSoftBody hitBody = hit.transform.GetComponent<BSoftBody>();
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+            
+                BSoftBody hitBody = hit.transform.GetComponentInChildren<BSoftBody>();
                 if (hitBody)
-                    hitBody.DeformAtPoint(hit.point, hit.normal, 35f, 0.7f);
+                {
+
+                    hitBody.DeformAtPoint(hit.point, hit.normal, 25f, 0.5f);
+                    haptics.LoopAllActuators(0, 0.5f);
+
+                    //Debug.Log("HitBodyNmae: " + hitBody.transform.gameObject.name);
+                }
+                
+
             }
         }
-        
+
+        else
+        {
+
+            //Stop haptics
+            haptics.LoopAllActuators(0, 0);
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+
+
+        }
 
 
 

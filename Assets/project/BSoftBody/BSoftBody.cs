@@ -244,7 +244,10 @@ public class BSoftBody : MonoBehaviour {
 
         float maxDist = impactForce * tIS;
         if (maxDist > impactScale + _distAdd)
+        {
             maxDist = impactScale + _distAdd;
+          
+        }
         //sqrMaxDist for sqr distance checks which are much faster
         maxDist *= maxDist;
 
@@ -255,15 +258,24 @@ public class BSoftBody : MonoBehaviour {
         for (int i = 0; i < softVerts.Length; i++) {
             Vector3 localVert = softVerts[i];
             float tmpDist = Vector3.SqrMagnitude(localPoint - localVert);
+            //Debug.Log("LocalPoint: " + localPoint);
+            Debug.Log("localVert: " + localVert);
+            //Debug.Log("tmpDist: " + tmpDist);
+
             //float tmpDist = Vector3.Distance(localPoint, worldVert);
             if (tmpDist < maxDist) {
+
                 localVert += localImpactNormal * (maxDist - tmpDist);
                 softVerts[i] = localVert;
             }
         }
 
-        if (updateMesh) FinalizeNewMesh(softVerts);
+        if (updateMesh)
+        {
+            FinalizeNewMesh(softVerts);
+            Debug.Log("03");
 
+        }
         ////end timing
         //sw.Stop();
         //Debug.Log("Deform Took: " + sw.ElapsedMilliseconds + " : " + sw.ElapsedTicks);
