@@ -2156,7 +2156,7 @@ Transform:
   m_GameObject: {fileID: 411181658}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 52.146, y: 0.901, z: -4.07}
-  m_LocalScale: {x: 0.34854603, y: 0.016879255, z: 0.34854603}
+  m_LocalScale: {x: 0.50145316, y: 0.024284184, z: 0.50145316}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -3369,21 +3369,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1206339983}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &619785750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 619785749}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a48bc0f2eaf09942a2836c3457c2cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ball: {fileID: 0}
-  wrist: {fileID: 0}
-  min: 0
 --- !u!95 &619785751
 Animator:
   serializedVersion: 3
@@ -5232,7 +5217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 619785749}
   wrist: {fileID: 2037310115}
-  min: 0.2
+  min: 0.5
 --- !u!135 &894098232
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5253,7 +5238,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894098230}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7154,7 +7139,7 @@ PrefabInstance:
     - target: {fileID: 9027144558863456750, guid: 7ad2dc2eb7a304f4a981563194045c7d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0851401
+      value: 1.1266
       objectReference: {fileID: 0}
     - target: {fileID: 9027144558863456750, guid: 7ad2dc2eb7a304f4a981563194045c7d,
         type: 3}
@@ -7204,17 +7189,17 @@ PrefabInstance:
     - target: {fileID: 9027144558863456750, guid: 7ad2dc2eb7a304f4a981563194045c7d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.34854603
+      value: 0.50145316
       objectReference: {fileID: 0}
     - target: {fileID: 9027144558863456750, guid: 7ad2dc2eb7a304f4a981563194045c7d,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.34854594
+      value: 0.50145304
       objectReference: {fileID: 0}
     - target: {fileID: 9027144558863456750, guid: 7ad2dc2eb7a304f4a981563194045c7d,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.34854603
+      value: 0.50145316
       objectReference: {fileID: 0}
     - target: {fileID: 9027144558863456751, guid: 7ad2dc2eb7a304f4a981563194045c7d,
         type: 3}
@@ -9291,6 +9276,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a6de4f12abccdf409dbc1aeda786a0c, type: 3}
+--- !u!1 &1546455163 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2479061129675220064, guid: 5438e442fb2cad6418d9d5fd6824b933,
+    type: 3}
+  m_PrefabInstance: {fileID: 2479061129099767874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1546455164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546455163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b83b01dfdfc7546819f4ec87f7fbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1547196465
 GameObject:
   m_ObjectHideFlags: 0
@@ -10660,7 +10663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 619785749}
   wrist: {fileID: 1948697353}
-  min: 0.2
+  min: 0.5
 --- !u!135 &1802534402
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10681,7 +10684,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802534399}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -12836,7 +12839,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2069898604
 Transform:
   m_ObjectHideFlags: 0
@@ -14473,6 +14476,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: UserHand
       objectReference: {fileID: 0}
+    - target: {fileID: 2479061128960893459, guid: 5438e442fb2cad6418d9d5fd6824b933,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2479061129060322678, guid: 5438e442fb2cad6418d9d5fd6824b933,
         type: 3}
       propertyPath: m_TagString
@@ -14569,6 +14577,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2479061129335880469, guid: 5438e442fb2cad6418d9d5fd6824b933,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479061129545410337, guid: 5438e442fb2cad6418d9d5fd6824b933,
         type: 3}
       propertyPath: m_IsActive
       value: 1

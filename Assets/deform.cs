@@ -39,7 +39,7 @@ public class deform : MonoBehaviour
                 if (hitBody)
                 {
 
-                    hitBody.DeformAtPoint(hit.point, hit.normal, 25f, 0.5f);
+                    hitBody.DeformAtPoint(hit.point, hit.normal, 25f, 0.6f);
                     haptics.LoopAllActuators(0, 0.5f);
 
                     //Debug.Log("HitBodyNmae: " + hitBody.transform.gameObject.name);
