@@ -5217,7 +5217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 619785749}
   wrist: {fileID: 2037310115}
-  min: 0.5
+  min: 0.3
 --- !u!135 &894098232
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10663,7 +10663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 619785749}
   wrist: {fileID: 1948697353}
-  min: 0.5
+  min: 0.3
 --- !u!135 &1802534402
 SphereCollider:
   m_ObjectHideFlags: 0
